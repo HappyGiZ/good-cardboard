@@ -1,0 +1,16 @@
+.button
+    background-color: $active-color
+    color: $text-color-light
+    font-size: 14px
+    border: none
+    padding: 13px 22px
+    border-radius: 5px
+    img
+        vertical-align: middle
+    &:hover
+        background-color: lighten($active-color, 5%)
+        cursor: pointer
+    &:active
+        background-color: $text-color-light
+        color: $text-color-dark
+        border: 1px solid $text-color-dark
