@@ -3,6 +3,10 @@ body {
   background-color: #48bd6f5d;
 }
 
+img {
+  max-width: 100%;
+}
+
 .button {
   background-color: #ff9d00;
   color: #fff;
