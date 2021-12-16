@@ -41,18 +41,3 @@ body {
   font-size: 22px;
   margin-right: 13px;
 }
-
-ul {
-  list-style: none;
-}
-
-ul li::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: purple;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-}
