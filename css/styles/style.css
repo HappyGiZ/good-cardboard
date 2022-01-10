@@ -16,6 +16,22 @@ input:focus {
   outline: 0;
 }
 
+.section-title {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.section-title::after {
+  margin-top: 12px;
+  content: "";
+  display: block;
+  height: 6px;
+  background: url("../../../../../../../my-project/src/img/production/line.png") center no-repeat;
+}
+
 .button {
   background-color: #ff9d00;
   color: #fff;
@@ -42,7 +58,7 @@ input:focus {
 
 .header {
   padding: 15px 0;
-  background-color: #0ff;
+  background-color: #f4f4f4;
 }
 
 .header-contacts {
@@ -59,6 +75,37 @@ input:focus {
 .header-contacts__phone:first-child {
   border-right: 1px solid #cfcfd0;
   padding-right: 13px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    margin-bottom: -100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    margin-bottom: -100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+.animate {
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .main {
@@ -245,4 +292,70 @@ input:focus {
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
+}
+
+.features {
+  background-color: #f4f4f4;
+  padding-top: 49px;
+  padding-bottom: 55px;
+}
+
+.features-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-block {
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+  padding: 25px 15px;
+  color: #373737;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.features-block__img {
+  min-width: 50px;
+  margin-right: 10px;
+}
+
+.features-block__title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.features-block__descr {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.numbers {
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.numbers-block {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.numbers-block__title {
+  color: #ff9d00;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.numbers-block__title sup {
+  font-size: 16px;
+}
+
+.numbers-block__text {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
 }
