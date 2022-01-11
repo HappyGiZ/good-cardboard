@@ -16,9 +16,19 @@
     background-color: $active-color
     color: $text-color-light
     font-size: 14px
-    border: none
+    border: 1px solid transparent
     padding: 13px 22px
     border-radius: 5px
+    &-o
+        background-color: transparent
+        color: $text-color-dark
+        border: 1px solid rgba(55, 55, 55, 0.5)
+        &:hover
+            color: $text-color-light
+            background-color: lighten($active-color, 5%)
+            border: 1px solid transparent
+            cursor: pointer
+
     img
         vertical-align: middle
     &:hover
@@ -27,4 +37,4 @@
     &:active
         background-color: $text-color-light
         color: $text-color-dark
-        border: none
+        border: 1px solid transparent
