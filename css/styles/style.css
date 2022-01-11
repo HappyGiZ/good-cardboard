@@ -396,3 +396,48 @@ input:focus {
 .products-block__button {
   margin-right: 12px;
 }
+
+.clients-block__img {
+  margin-bottom: 33px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.clients-block__img img {
+  filter: grayscale(100%);
+  transition: .5s;
+}
+
+.clients-block__img img:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.col-3 {
+  border: 1px solid #000;
+}
+
+.klients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #00f;
+  flex-wrap: wrap;
+}
+
+.klient {
+  flex-basis: 24%;
+  border: 1px solid red;
+}
+
+.klient img {
+  filter: grayscale(100%);
+  transition: .5s;
+}
+
+.klient img:hover {
+  filter: none;
+  cursor: pointer;
+}
