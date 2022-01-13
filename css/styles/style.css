@@ -1,6 +1,5 @@
 body {
   font-family: Roboto,sans-serif;
-  background-color: #48bd6f5d;
 }
 
 body {
@@ -397,47 +396,28 @@ input:focus {
   margin-right: 12px;
 }
 
-.clients-block__img {
-  margin-bottom: 33px;
+.clients-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
-  border: 1px solid red;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clients-block__img {
+  margin-bottom: 10px;
+  flex-basis: 24%;
 }
 
 .clients-block__img img {
+  border: 2px solid transperent;
+  border-radius: 10px;
   filter: grayscale(100%);
   transition: .5s;
 }
 
 .clients-block__img img:hover {
-  filter: none;
-  cursor: pointer;
-}
-
-.col-3 {
-  border: 1px solid #000;
-}
-
-.klients {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #00f;
-  flex-wrap: wrap;
-}
-
-.klient {
-  flex-basis: 24%;
-  border: 1px solid red;
-}
-
-.klient img {
-  filter: grayscale(100%);
-  transition: .5s;
-}
-
-.klient img:hover {
   filter: none;
   cursor: pointer;
 }
