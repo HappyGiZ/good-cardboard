@@ -116,8 +116,12 @@ input:focus {
 .animate {
   -webkit-animation-name: move;
   animation-name: move;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .main {
@@ -144,6 +148,7 @@ input:focus {
 
 .main-img {
   position: relative;
+  opacity: 0;
 }
 
 .main-img::before {
@@ -370,6 +375,62 @@ input:focus {
   color: #373737;
   font-size: 16px;
   font-weight: 300;
+}
+
+@-webkit-keyframes featuresUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes featuresUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.animated_features {
+  -webkit-animation-name: featuresUp;
+  animation-name: featuresUp;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes spinY {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes spinY {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.animated_spinY {
+  -webkit-animation: spinY;
+  animation: spinY;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .products {

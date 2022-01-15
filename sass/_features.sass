@@ -43,4 +43,24 @@
             color: $text-color-dark
             font-size: 16px
             font-weight: 300
-            
+
+@keyframes featuresUp
+    0%
+        opacity: 0%
+    100%
+        opacity: 100%
+
+.animated_features
+    animation-name: featuresUp
+    animation-duration: 2s
+
+@keyframes spinY
+    0%
+        opacity: 0%
+        transform: rotateY(90deg)
+    100%
+        opacity: 100%
+
+.animated_spinY
+    animation: spinY
+    animation-duration: 2s
