@@ -16,6 +16,7 @@ input:focus {
 }
 
 .section-title {
+  color: #373737;
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
@@ -66,6 +67,23 @@ input:focus {
   background-color: #fff;
   color: #373737;
   border: 1px solid transparent;
+}
+
+.dark-bg {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: -1;
 }
 
 .header {
@@ -125,25 +143,11 @@ input:focus {
 }
 
 .main {
-  position: relative;
   padding-top: 65px;
   padding-bottom: 60px;
   background: #373737 url("../../img/main/mainbg.jpg") center no-repeat;
   background-size: cover;
   color: #fff;
-  z-index: 1;
-}
-
-.main::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.5);
-  z-index: -1;
 }
 
 .main-img {
@@ -181,6 +185,7 @@ input:focus {
 }
 
 .form {
+  display: flex;
   margin-bottom: 12px;
 }
 
@@ -203,7 +208,9 @@ input:focus {
   padding: 20px 130px 20px 20px;
   margin-right: 10px;
   vertical-align: middle;
-  flex-basis: 50%;
+  width: 100%;
+  max-width: 365px;
+  margin-bottom: 12px;
 }
 
 .form .button {
@@ -448,6 +455,7 @@ input:focus {
 }
 
 .products-block__title {
+  color: #373737;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -481,4 +489,40 @@ input:focus {
 .clients-block__img img:hover {
   filter: none;
   cursor: pointer;
+}
+
+.offer {
+  padding-top: 64px;
+  padding-bottom: 69px;
+  background: gray url("../../../../../../../my-project/src/img/offer/offer-bg.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.offer-title {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.offer-title_small {
+  display: block;
+  font-size: 26px;
+}
+
+.offer-form__label {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.offer-form__input {
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.offer-form__button {
+  margin-bottom: 9px;
 }
