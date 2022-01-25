@@ -11,6 +11,13 @@
    <!-- style css -->
    <link rel="stylesheet" href="/my-project/src/css/styles/style.css">
 
+   <!-- jQuery 1.8 or later, 33 KB -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <!-- Fotorama from CDNJS, 19 KB -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,6 +327,45 @@
          </div>
       </container>
    </section>
+
+   <!-- production -->
+   <section class="production">
+      <div class="containder">
+         <div class="row">
+            <div class="col-7">
+               <div class="production-slider__top">
+                  <div class="fotorama" data-autoplay="true" data-arrows="false" data-height="373"
+                     data-transition="crossfade" data-loop="true" data-nav="thumbs">
+                     <img src="/my-project/src/img/slider/01.jpg">
+                     <img src="/my-project/src/img/slider/02.jpg">
+                     <img src="/my-project/src/img/slider/03.jpg">
+                     <img src="/my-project/src/img/slider/04.jpg">
+                     <img src="/my-project/src/img/slider/05.jpg">
+                  </div>
+               </div>
+            </div>
+            <!-- /.col-7 -->
+            <div class="col-5">
+               <div class="production-text">
+                  <div class="production-text__title">Производство</div>
+                  <!-- /.production-text__title -->
+                  <div class="production-text__descr">Современное оборудование позволяет произ- водить до 5 миллионов
+                     квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам
+                     заказчика. <br> <br>
+                     Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения,
+                     транспортировки и производства вашей продукции. <br> <br>
+                     Возможно нанесение цветной флексопечати на поверхность коробов.</div>
+                  <!-- /.production-text__descr -->
+               </div>
+               <!-- /.production-text -->
+            </div>
+            <!-- /.col-5 -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.containder -->
+   </section>
+   <!-- /.production -->
 
    <!-- Наши клиенты -->
    <section class="clients">

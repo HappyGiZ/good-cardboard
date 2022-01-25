@@ -134,8 +134,8 @@ input:focus {
 .animate {
   -webkit-animation-name: move;
   animation-name: move;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
@@ -525,4 +525,35 @@ input:focus {
 
 .offer-form__button {
   margin-bottom: 9px;
+}
+
+.production {
+  padding-top: 87px;
+  padding-bottom: 90px;
+}
+
+.production-text {
+  width: 100%;
+  max-width: 380px;
+  margin-top: 19px;
+}
+
+.production-text__title {
+  height: 62px;
+  padding-left: 25px;
+  line-height: 62px;
+  color: #fff;
+  background-color: #ff9d00;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+.production-text__descr {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+  margin-left: 25px;
 }
