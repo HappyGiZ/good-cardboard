@@ -87,7 +87,7 @@ input:focus {
 }
 
 .header {
-  padding: 15px 0;
+  padding: 65px 0 15px;
   background-color: #f4f4f4;
 }
 
@@ -556,4 +556,43 @@ input:focus {
   line-height: 24px;
   text-align: justify;
   margin-left: 25px;
+}
+
+.menu {
+  position: fixed;
+  min-width: 100%;
+  background-color: #373737;
+  z-index: 5;
+}
+
+.menu-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #373737;
+  align-items: center;
+}
+
+.menu-link__button {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 20px;
+}
+
+.menu-link__line {
+  border-left: 1px dashed #4d4d4d;
+  height: 25px;
+}
+
+.menu a {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  color: #ff9d00;
 }
