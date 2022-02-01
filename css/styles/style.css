@@ -86,8 +86,12 @@ input:focus {
   z-index: -1;
 }
 
-.header {
-  padding: 65px 0 15px;
+.header-logo {
+  background: url("../../../../../../../my-project/src/img/header/header-logo.png") center no-repeat;
+  background-size: 100%;
+  width: 191px;
+  height: 61px;
+  padding: 15px 0;
   background-color: #f4f4f4;
 }
 
@@ -97,7 +101,12 @@ input:focus {
   align-items: center;
 }
 
+.header-contacts__phones {
+  display: flex;
+}
+
 .header-contacts__phone {
+  display: inline-block;
   font-size: 22px;
   margin-right: 13px;
 }
@@ -198,6 +207,7 @@ input:focus {
 }
 
 .form-title__important {
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -595,4 +605,116 @@ input:focus {
 
 .menu a:hover {
   color: #ff9d00;
+}
+
+@media (max-width:576px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    background-color: #0ff;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .header {
+    height: 56px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+
+  .header-logo {
+    padding: 0;
+    background: #ff9d00 url("../../../../../../../my-project/src/img/header/header-logo__small.png") center no-repeat;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+  }
+
+  .header-contacts__phones {
+    flex-direction: column;
+  }
+
+  .header-contacts__phone {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  .header-contacts__phone:first-child {
+    border: none;
+  }
+
+  .header-contacts__button {
+    padding: 6px;
+    display: inline-block;
+  }
+
+  .main {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .main-text__title {
+    font-size: 22px;
+    color: #ff9d00;
+  }
+
+  .main-text__subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .main-text__form {
+    padding-left: 0;
+    background-color: transparent;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .form-title {
+    padding-right: 0;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+  }
+
+  .form-title__important {
+    margin-top: 15px;
+  }
+
+  .form__input {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: 47px;
+  }
+
+  .numbers-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .features-blocks {
+    flex-direction: column;
+  }
+
+  .features-block {
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+
+  .clients-block__img {
+    flex-basis: 40%;
+  }
+
+  .clients-block__img img {
+    filter: none;
+  }
 }
