@@ -86,6 +86,10 @@ input:focus {
   z-index: -1;
 }
 
+.header {
+  padding-top: 50px;
+}
+
 .header-logo {
   background: url("../../../../../../../my-project/src/img/header/header-logo.png") center no-repeat;
   background-size: 100%;
@@ -364,6 +368,7 @@ input:focus {
 .features-block__descr {
   font-size: 14px;
   font-weight: 400;
+  text-align: justify;
 }
 
 .numbers {
@@ -620,6 +625,10 @@ input:focus {
     display: none;
   }
 
+  .menu {
+    display: none;
+  }
+
   .header {
     height: 56px;
     padding-top: 15px;
@@ -717,4 +726,38 @@ input:focus {
   .clients-block__img img {
     filter: none;
   }
+}
+
+.contacts {
+  position: relative;
+  margin-top: 73px;
+  margin-bottom: 87px;
+  height: 500px;
+  line-height: 1.4;
+}
+
+.contacts-block {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  background-color: #fff;
+  padding: 33px 40px 39px 62px;
+  color: #373737;
+}
+
+.contacts-block__address {
+  margin-bottom: 13px;
+}
+
+.contacts-block__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-block__phones {
+  margin-bottom: 14px;
+}
+
+.contacts-block .button {
+  margin-bottom: 25px;
 }
